@@ -22,6 +22,26 @@ int main()
         cout << "---------------------------" << endl;
     }
 
+    int currentYear = 2025;
+    int count = 0;
+
+    cout << "Employye over 60 years old:\n";
+
+    for (int i = 0; i < 5; i++) {
+        int age = currentYear - stuff[i].birthYear;
+        if (age > 60) {
+            count++;
+            cout << "Surname: " << stuff[i].lastName << endl;
+            cout << "Year: " << stuff[i].birthYear << " (Age: " << age << ")" << endl;
+            cout << "Position: " << stuff[i].position << endl;
+            cout << "Salary: " << stuff[i].salary << endl;
+            cout << "Education: " << stuff[i].education << endl;
+            cout << "---------------------------" << endl;
+        }
+    }
+
+    cout << "Total amount of employee, over 60 years old: " << count << endl;
+
     return 0;
 }
 
