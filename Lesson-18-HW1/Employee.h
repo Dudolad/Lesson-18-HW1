@@ -3,10 +3,10 @@
 #include <string>
 using namespace std;
 
-struct employee {
+struct Employee {
 	string lastName;
 	int birthYear;	
-	string position[20];
+	string position;
 	double salary;
 	string education;
 };
