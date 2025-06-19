@@ -1,8 +1,12 @@
 #pragma once
+#include <iostream>
+#include <string>
+using namespace std;
+
 struct employee {
-	char lastName[15];
-	int birthYear;
-	char position[20];
-	float salary;
-	char education;
+	string lastName;
+	int birthYear;	
+	string position[20];
+	double salary;
+	string education;
 };
